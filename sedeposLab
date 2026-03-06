@@ -1,0 +1,95 @@
+GIT COMMANDS
+
+
+Getting Started
+Start a new repo:
+git init
+
+Clone an existing repo:
+git clone <url>
+
+Prepare to Commit
+Add untracked file or unstaged changes:
+git add <file>
+
+Add all untracked files and unstaged changes:
+git add .
+
+Choose which parts of a file to stage:
+git add -p
+
+Move file:
+git mv <old> <new>
+
+Delete file:
+git rm <file>
+
+Tell Git to forget about a file without deleting it:
+git rm --cached <file>
+
+Unstage one file:
+git reset <file>
+
+Unstage everything:
+git reset
+
+Check what you added:
+git status
+
+Make Commits
+Make a commit (and open text editor to write message):
+git commit
+
+Make a commit:
+git commit -m 'message'
+
+Commit all unstaged changes:
+git commit -am 'message'
+
+Move Between Branches
+Switch branches:
+git switch <name>
+OR
+git checkout <name>
+
+Create a branch:
+git switch -c <name>
+OR
+git checkout -b <name>
+
+List branches:
+git branch
+
+List branches by most recently committed to:
+git branch --sort=-committerdate
+
+Delete a branch:
+git branch -d <name>
+
+Force delete a branch:
+git branch -D <name>
+Diff Staged/Unstaged Changes
+
+Diff all staged and unstaged changes:
+git diff HEAD
+
+Diff just staged changes:
+git diff --staged
+
+Diff just unstaged changes:
+git diff
+Diff Commits
+
+Show diff between a commit and its parent:
+git show <commit>
+
+Diff two commits:
+git diff <commit> <commit>
+
+Diff one file since a commit:
+git diff <commit> <file>
+
+Show a summary of a diff:
+git diff <commit> --stat
+git show <commit> --stat
+
